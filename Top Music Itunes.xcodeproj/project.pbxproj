@@ -1,0 +1,528 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CD5F42201DB19E3F00240A54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5F421F1DB19E3F00240A54 /* AppDelegate.swift */; };
+		CD5F42221DB19E3F00240A54 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5F42211DB19E3F00240A54 /* ViewController.swift */; };
+		CD5F42251DB19E3F00240A54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD5F42231DB19E3F00240A54 /* Main.storyboard */; };
+		CD5F42271DB19E3F00240A54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD5F42261DB19E3F00240A54 /* Assets.xcassets */; };
+		CD5F422A1DB19E3F00240A54 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD5F42281DB19E3F00240A54 /* LaunchScreen.storyboard */; };
+		CD5F42351DB19E3F00240A54 /* Top_Music_ItunesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5F42341DB19E3F00240A54 /* Top_Music_ItunesTests.swift */; };
+		CD5F42401DB19E3F00240A54 /* Top_Music_ItunesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5F423F1DB19E3F00240A54 /* Top_Music_ItunesUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CD5F42311DB19E3F00240A54 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD5F42141DB19E3E00240A54 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD5F421B1DB19E3E00240A54;
+			remoteInfo = "Top Music Itunes";
+		};
+		CD5F423C1DB19E3F00240A54 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD5F42141DB19E3E00240A54 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD5F421B1DB19E3E00240A54;
+			remoteInfo = "Top Music Itunes";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CD5F421C1DB19E3F00240A54 /* Top Music Itunes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Top Music Itunes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD5F421F1DB19E3F00240A54 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CD5F42211DB19E3F00240A54 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CD5F42241DB19E3F00240A54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CD5F42261DB19E3F00240A54 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CD5F42291DB19E3F00240A54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CD5F422B1DB19E3F00240A54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD5F42301DB19E3F00240A54 /* Top Music ItunesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Top Music ItunesTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD5F42341DB19E3F00240A54 /* Top_Music_ItunesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Top_Music_ItunesTests.swift; sourceTree = "<group>"; };
+		CD5F42361DB19E3F00240A54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD5F423B1DB19E3F00240A54 /* Top Music ItunesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Top Music ItunesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD5F423F1DB19E3F00240A54 /* Top_Music_ItunesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Top_Music_ItunesUITests.swift; sourceTree = "<group>"; };
+		CD5F42411DB19E3F00240A54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CD5F42191DB19E3E00240A54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD5F422D1DB19E3F00240A54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD5F42381DB19E3F00240A54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CD5F42131DB19E3E00240A54 = {
+			isa = PBXGroup;
+			children = (
+				CD5F421E1DB19E3F00240A54 /* Top Music Itunes */,
+				CD5F42331DB19E3F00240A54 /* Top Music ItunesTests */,
+				CD5F423E1DB19E3F00240A54 /* Top Music ItunesUITests */,
+				CD5F421D1DB19E3F00240A54 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CD5F421D1DB19E3F00240A54 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD5F421C1DB19E3F00240A54 /* Top Music Itunes.app */,
+				CD5F42301DB19E3F00240A54 /* Top Music ItunesTests.xctest */,
+				CD5F423B1DB19E3F00240A54 /* Top Music ItunesUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CD5F421E1DB19E3F00240A54 /* Top Music Itunes */ = {
+			isa = PBXGroup;
+			children = (
+				CD5F421F1DB19E3F00240A54 /* AppDelegate.swift */,
+				CD5F42211DB19E3F00240A54 /* ViewController.swift */,
+				CD5F42231DB19E3F00240A54 /* Main.storyboard */,
+				CD5F42261DB19E3F00240A54 /* Assets.xcassets */,
+				CD5F42281DB19E3F00240A54 /* LaunchScreen.storyboard */,
+				CD5F422B1DB19E3F00240A54 /* Info.plist */,
+			);
+			path = "Top Music Itunes";
+			sourceTree = "<group>";
+		};
+		CD5F42331DB19E3F00240A54 /* Top Music ItunesTests */ = {
+			isa = PBXGroup;
+			children = (
+				CD5F42341DB19E3F00240A54 /* Top_Music_ItunesTests.swift */,
+				CD5F42361DB19E3F00240A54 /* Info.plist */,
+			);
+			path = "Top Music ItunesTests";
+			sourceTree = "<group>";
+		};
+		CD5F423E1DB19E3F00240A54 /* Top Music ItunesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CD5F423F1DB19E3F00240A54 /* Top_Music_ItunesUITests.swift */,
+				CD5F42411DB19E3F00240A54 /* Info.plist */,
+			);
+			path = "Top Music ItunesUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CD5F421B1DB19E3E00240A54 /* Top Music Itunes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD5F42441DB19E3F00240A54 /* Build configuration list for PBXNativeTarget "Top Music Itunes" */;
+			buildPhases = (
+				CD5F42181DB19E3E00240A54 /* Sources */,
+				CD5F42191DB19E3E00240A54 /* Frameworks */,
+				CD5F421A1DB19E3E00240A54 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Top Music Itunes";
+			productName = "Top Music Itunes";
+			productReference = CD5F421C1DB19E3F00240A54 /* Top Music Itunes.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CD5F422F1DB19E3F00240A54 /* Top Music ItunesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD5F42471DB19E3F00240A54 /* Build configuration list for PBXNativeTarget "Top Music ItunesTests" */;
+			buildPhases = (
+				CD5F422C1DB19E3F00240A54 /* Sources */,
+				CD5F422D1DB19E3F00240A54 /* Frameworks */,
+				CD5F422E1DB19E3F00240A54 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD5F42321DB19E3F00240A54 /* PBXTargetDependency */,
+			);
+			name = "Top Music ItunesTests";
+			productName = "Top Music ItunesTests";
+			productReference = CD5F42301DB19E3F00240A54 /* Top Music ItunesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CD5F423A1DB19E3F00240A54 /* Top Music ItunesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD5F424A1DB19E3F00240A54 /* Build configuration list for PBXNativeTarget "Top Music ItunesUITests" */;
+			buildPhases = (
+				CD5F42371DB19E3F00240A54 /* Sources */,
+				CD5F42381DB19E3F00240A54 /* Frameworks */,
+				CD5F42391DB19E3F00240A54 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD5F423D1DB19E3F00240A54 /* PBXTargetDependency */,
+			);
+			name = "Top Music ItunesUITests";
+			productName = "Top Music ItunesUITests";
+			productReference = CD5F423B1DB19E3F00240A54 /* Top Music ItunesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CD5F42141DB19E3E00240A54 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Team Delmarz";
+				TargetAttributes = {
+					CD5F421B1DB19E3E00240A54 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+					CD5F422F1DB19E3F00240A54 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CD5F421B1DB19E3E00240A54;
+					};
+					CD5F423A1DB19E3F00240A54 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CD5F421B1DB19E3E00240A54;
+					};
+				};
+			};
+			buildConfigurationList = CD5F42171DB19E3E00240A54 /* Build configuration list for PBXProject "Top Music Itunes" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CD5F42131DB19E3E00240A54;
+			productRefGroup = CD5F421D1DB19E3F00240A54 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CD5F421B1DB19E3E00240A54 /* Top Music Itunes */,
+				CD5F422F1DB19E3F00240A54 /* Top Music ItunesTests */,
+				CD5F423A1DB19E3F00240A54 /* Top Music ItunesUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CD5F421A1DB19E3E00240A54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD5F422A1DB19E3F00240A54 /* LaunchScreen.storyboard in Resources */,
+				CD5F42271DB19E3F00240A54 /* Assets.xcassets in Resources */,
+				CD5F42251DB19E3F00240A54 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD5F422E1DB19E3F00240A54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD5F42391DB19E3F00240A54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CD5F42181DB19E3E00240A54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD5F42221DB19E3F00240A54 /* ViewController.swift in Sources */,
+				CD5F42201DB19E3F00240A54 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD5F422C1DB19E3F00240A54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD5F42351DB19E3F00240A54 /* Top_Music_ItunesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD5F42371DB19E3F00240A54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD5F42401DB19E3F00240A54 /* Top_Music_ItunesUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CD5F42321DB19E3F00240A54 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD5F421B1DB19E3E00240A54 /* Top Music Itunes */;
+			targetProxy = CD5F42311DB19E3F00240A54 /* PBXContainerItemProxy */;
+		};
+		CD5F423D1DB19E3F00240A54 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD5F421B1DB19E3E00240A54 /* Top Music Itunes */;
+			targetProxy = CD5F423C1DB19E3F00240A54 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CD5F42231DB19E3F00240A54 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD5F42241DB19E3F00240A54 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CD5F42281DB19E3F00240A54 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD5F42291DB19E3F00240A54 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CD5F42421DB19E3F00240A54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CD5F42431DB19E3F00240A54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CD5F42451DB19E3F00240A54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Top Music Itunes/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.delmarz.Top-Music-Itunes";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		CD5F42461DB19E3F00240A54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Top Music Itunes/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.delmarz.Top-Music-Itunes";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		CD5F42481DB19E3F00240A54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Top Music ItunesTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.delmarz.Top-Music-ItunesTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Top Music Itunes.app/Top Music Itunes";
+			};
+			name = Debug;
+		};
+		CD5F42491DB19E3F00240A54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Top Music ItunesTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.delmarz.Top-Music-ItunesTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Top Music Itunes.app/Top Music Itunes";
+			};
+			name = Release;
+		};
+		CD5F424B1DB19E3F00240A54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = "Top Music ItunesUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.delmarz.Top-Music-ItunesUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Top Music Itunes";
+			};
+			name = Debug;
+		};
+		CD5F424C1DB19E3F00240A54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = "Top Music ItunesUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.delmarz.Top-Music-ItunesUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Top Music Itunes";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CD5F42171DB19E3E00240A54 /* Build configuration list for PBXProject "Top Music Itunes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD5F42421DB19E3F00240A54 /* Debug */,
+				CD5F42431DB19E3F00240A54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD5F42441DB19E3F00240A54 /* Build configuration list for PBXNativeTarget "Top Music Itunes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD5F42451DB19E3F00240A54 /* Debug */,
+				CD5F42461DB19E3F00240A54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CD5F42471DB19E3F00240A54 /* Build configuration list for PBXNativeTarget "Top Music ItunesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD5F42481DB19E3F00240A54 /* Debug */,
+				CD5F42491DB19E3F00240A54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CD5F424A1DB19E3F00240A54 /* Build configuration list for PBXNativeTarget "Top Music ItunesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD5F424B1DB19E3F00240A54 /* Debug */,
+				CD5F424C1DB19E3F00240A54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CD5F42141DB19E3E00240A54 /* Project object */;
+}
