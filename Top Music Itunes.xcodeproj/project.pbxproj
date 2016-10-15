@@ -14,6 +14,7 @@
 		CD5F422A1DB19E3F00240A54 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD5F42281DB19E3F00240A54 /* LaunchScreen.storyboard */; };
 		CD5F42351DB19E3F00240A54 /* Top_Music_ItunesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5F42341DB19E3F00240A54 /* Top_Music_ItunesTests.swift */; };
 		CD5F42401DB19E3F00240A54 /* Top_Music_ItunesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5F423F1DB19E3F00240A54 /* Top_Music_ItunesUITests.swift */; };
+		CD5F42521DB1A9F700240A54 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5F42511DB1A9F700240A54 /* APIManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		CD5F423B1DB19E3F00240A54 /* Top Music ItunesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Top Music ItunesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD5F423F1DB19E3F00240A54 /* Top_Music_ItunesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Top_Music_ItunesUITests.swift; sourceTree = "<group>"; };
 		CD5F42411DB19E3F00240A54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD5F42511DB1A9F700240A54 /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +128,7 @@
 		CD5F424D1DB1A44400240A54 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				CD5F42511DB1A9F700240A54 /* APIManager.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -225,15 +228,18 @@
 				TargetAttributes = {
 					CD5F421B1DB19E3E00240A54 = {
 						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 					CD5F422F1DB19E3F00240A54 = {
 						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 						TestTargetID = CD5F421B1DB19E3E00240A54;
 					};
 					CD5F423A1DB19E3F00240A54 = {
 						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 						TestTargetID = CD5F421B1DB19E3E00240A54;
 					};
@@ -291,6 +297,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD5F42521DB1A9F700240A54 /* APIManager.swift in Sources */,
 				CD5F42221DB19E3F00240A54 /* ViewController.swift in Sources */,
 				CD5F42201DB19E3F00240A54 /* AppDelegate.swift in Sources */,
 			);
