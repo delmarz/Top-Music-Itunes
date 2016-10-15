@@ -9,7 +9,7 @@
 import Foundation
 
 class APIManager {
-
+    
     
     func loadData(_ urlString: String, completion: @escaping (_ result: String) ->()) {
         
@@ -18,18 +18,31 @@ class APIManager {
         let url = URL(string: urlString)!
         
         let task = session.dataTask(with: url)
-            { (data, urlResponse, error) in
+        { (data, urlResponse, error) in
             
+            if error != nil {
                 DispatchQueue.main.async {
-                    if error != nil {
-                        completion((error!.localizedDescription))
-                    } else {
-                        completion("URLSession Successfully")
-                        print(data)
+                    completion((error!.localizedDescription))
+                }
+            } else {
+                do {
+                    if let json = try JSONSerialization.jsonObject(with: data!, options: .allowFragments) as? [String: AnyObject] {
+                        print(json)
+                        
+                        DispatchQueue.global(qos: .userInitiated).async {
+                            DispatchQueue.main.async {
+                                completion("JSONSerialization Successful")
+                            }
+                        }
+                    }
+                } catch {
+                    DispatchQueue.main.async {
+                        completion("Error in JSONSerialization Successful")
                     }
                 }
+            }
         }
         task.resume()
     }
-    
+
 }
