@@ -15,6 +15,8 @@
 		CD5F42351DB19E3F00240A54 /* Top_Music_ItunesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5F42341DB19E3F00240A54 /* Top_Music_ItunesTests.swift */; };
 		CD5F42401DB19E3F00240A54 /* Top_Music_ItunesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5F423F1DB19E3F00240A54 /* Top_Music_ItunesUITests.swift */; };
 		CD5F42521DB1A9F700240A54 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5F42511DB1A9F700240A54 /* APIManager.swift */; };
+		CD5F42551DB2267900240A54 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5F42541DB2267900240A54 /* Constant.swift */; };
+		CD5F42571DB227F300240A54 /* MusicVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5F42561DB227F300240A54 /* MusicVideo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		CD5F423F1DB19E3F00240A54 /* Top_Music_ItunesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Top_Music_ItunesUITests.swift; sourceTree = "<group>"; };
 		CD5F42411DB19E3F00240A54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD5F42511DB1A9F700240A54 /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		CD5F42541DB2267900240A54 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		CD5F42561DB227F300240A54 /* MusicVideo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicVideo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,7 @@
 		CD5F421E1DB19E3F00240A54 /* Top Music Itunes */ = {
 			isa = PBXGroup;
 			children = (
+				CD5F42531DB2266A00240A54 /* Utils */,
 				CD5F42501DB1A4BA00240A54 /* Supporting Files */,
 				CD5F424D1DB1A44400240A54 /* Model */,
 				CD5F424E1DB1A45400240A54 /* Controller */,
@@ -129,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				CD5F42511DB1A9F700240A54 /* APIManager.swift */,
+				CD5F42561DB227F300240A54 /* MusicVideo.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -158,6 +164,14 @@
 				CD5F421F1DB19E3F00240A54 /* AppDelegate.swift */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CD5F42531DB2266A00240A54 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				CD5F42541DB2267900240A54 /* Constant.swift */,
+			);
+			name = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,7 +313,9 @@
 			files = (
 				CD5F42521DB1A9F700240A54 /* APIManager.swift in Sources */,
 				CD5F42221DB19E3F00240A54 /* ViewController.swift in Sources */,
+				CD5F42571DB227F300240A54 /* MusicVideo.swift in Sources */,
 				CD5F42201DB19E3F00240A54 /* AppDelegate.swift in Sources */,
+				CD5F42551DB2267900240A54 /* Constant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

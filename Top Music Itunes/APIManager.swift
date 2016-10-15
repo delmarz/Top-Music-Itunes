@@ -26,7 +26,7 @@ class APIManager {
                 }
             } else {
                 do {
-                    if let json = try JSONSerialization.jsonObject(with: data!, options: .allowFragments) as? [String: AnyObject] {
+                    if let json = try JSONSerialization.jsonObject(with: data!, options: .allowFragments) as? JSONDictionary {
                         print(json)
                         
                         DispatchQueue.global(qos: .userInitiated).async {
