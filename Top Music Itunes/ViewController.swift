@@ -17,14 +17,14 @@ class ViewController: UIViewController {
         api.loadData("https://itunes.apple.com/us/rss/topmusicvideos/limit=10/json", completion: didLoadData)
     }
     
-    func didLoadData(result: String) {
-        let alertController = UIAlertController(title: result, message: nil, preferredStyle: .alert)
-        let okAction = UIAlertAction(title: "OK", style: .default) { (action) in
-                // do something
+    func didLoadData(musicVideo: [MusicVideo]) {
+        for item in musicVideo {
+            print("name: \(item.videoName)")
         }
-        alertController.addAction(okAction)
-        self.present(alertController, animated: true, completion: nil)
         
+        for (index, item) in musicVideo.enumerated() {
+            print("\(index) name = \(item.videoName)")
+        }
     }
 
 }

@@ -11,7 +11,7 @@ import Foundation
 class APIManager {
     
     
-    func loadData(_ urlString: String, completion: @escaping (_ result: String) ->()) {
+    func loadData(_ urlString: String, completion: @escaping ([MusicVideo]) ->()) {
         
         let config = URLSessionConfiguration.ephemeral
         let session = URLSession.init(configuration: config)
@@ -21,24 +21,31 @@ class APIManager {
         { (data, urlResponse, error) in
             
             if error != nil {
-                DispatchQueue.main.async {
-                    completion((error!.localizedDescription))
-                }
+                print(error!.localizedDescription)
             } else {
                 do {
-                    if let json = try JSONSerialization.jsonObject(with: data!, options: .allowFragments) as? JSONDictionary {
-                        print(json)
+                    if let json = try JSONSerialization.jsonObject(with: data!, options: .allowFragments) as? JSONDictionary,
+                        let feed = json["feed"] as? JSONDictionary,
+                        let entry = feed["entry"] as? JSONArray {
                         
+                        var musicVideo = [MusicVideo]()
+                        for item in entry {
+                            let entry = MusicVideo(data: item as! JSONDictionary)
+                            musicVideo.append(entry)
+                        }
+                        
+                        let i = musicVideo.count
+                        print("API Manager total count ----> \(i)")
+                        
+                    
                         DispatchQueue.global(qos: .userInitiated).async {
                             DispatchQueue.main.async {
-                                completion("JSONSerialization Successful")
+                                completion(musicVideo)
                             }
                         }
                     }
                 } catch {
-                    DispatchQueue.main.async {
-                        completion("Error in JSONSerialization Successful")
-                    }
+                    print("Error in JSONSerialization")
                 }
             }
         }
