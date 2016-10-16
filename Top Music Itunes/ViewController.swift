@@ -18,9 +18,9 @@ class ViewController: UIViewController {
     }
     
     func didLoadData(musicVideo: [MusicVideo]) {
-        for item in musicVideo {
-            print("name: \(item.videoName)")
-        }
+        
+        
+        //print(reachabilityStatus)
         
         for (index, item) in musicVideo.enumerated() {
             print("\(index) name = \(item.videoName)")
