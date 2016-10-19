@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		CD0474B41DB3300F0069A1D9 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = CD0474B31DB3300F0069A1D9 /* Reachability.m */; };
 		CD5F42201DB19E3F00240A54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5F421F1DB19E3F00240A54 /* AppDelegate.swift */; };
-		CD5F42221DB19E3F00240A54 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5F42211DB19E3F00240A54 /* ViewController.swift */; };
 		CD5F42251DB19E3F00240A54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD5F42231DB19E3F00240A54 /* Main.storyboard */; };
 		CD5F42271DB19E3F00240A54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD5F42261DB19E3F00240A54 /* Assets.xcassets */; };
 		CD5F422A1DB19E3F00240A54 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD5F42281DB19E3F00240A54 /* LaunchScreen.storyboard */; };
@@ -18,6 +17,7 @@
 		CD5F42521DB1A9F700240A54 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5F42511DB1A9F700240A54 /* APIManager.swift */; };
 		CD5F42551DB2267900240A54 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5F42541DB2267900240A54 /* Constant.swift */; };
 		CD5F42571DB227F300240A54 /* MusicVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5F42561DB227F300240A54 /* MusicVideo.swift */; };
+		CDC28C941DB7B16D009A4252 /* MusicVideoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC28C931DB7B16D009A4252 /* MusicVideoTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +43,6 @@
 		CD0474B31DB3300F0069A1D9 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		CD5F421C1DB19E3F00240A54 /* Top Music Itunes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Top Music Itunes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD5F421F1DB19E3F00240A54 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CD5F42211DB19E3F00240A54 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CD5F42241DB19E3F00240A54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CD5F42261DB19E3F00240A54 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD5F42291DB19E3F00240A54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -57,6 +56,7 @@
 		CD5F42511DB1A9F700240A54 /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		CD5F42541DB2267900240A54 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		CD5F42561DB227F300240A54 /* MusicVideo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicVideo.swift; sourceTree = "<group>"; };
+		CDC28C931DB7B16D009A4252 /* MusicVideoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicVideoTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,7 +157,7 @@
 		CD5F424E1DB1A45400240A54 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				CD5F42211DB19E3F00240A54 /* ViewController.swift */,
+				CDC28C931DB7B16D009A4252 /* MusicVideoTableViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -327,8 +327,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD5F42521DB1A9F700240A54 /* APIManager.swift in Sources */,
-				CD5F42221DB19E3F00240A54 /* ViewController.swift in Sources */,
 				CD5F42571DB227F300240A54 /* MusicVideo.swift in Sources */,
+				CDC28C941DB7B16D009A4252 /* MusicVideoTableViewController.swift in Sources */,
 				CD5F42201DB19E3F00240A54 /* AppDelegate.swift in Sources */,
 				CD0474B41DB3300F0069A1D9 /* Reachability.m in Sources */,
 				CD5F42551DB2267900240A54 /* Constant.swift in Sources */,
