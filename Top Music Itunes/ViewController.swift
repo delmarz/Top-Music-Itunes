@@ -8,13 +8,15 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
-    @IBOutlet weak var displayLabel: UILabel!
+class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
+    @IBOutlet weak var displayLabel: UILabel!
+    @IBOutlet weak var tableView: UITableView!
+    var videos = [MusicVideo]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         
         NotificationCenter.default.addObserver(self, selector: #selector(ViewController.reachabilityStatusChanged), name: Notification.Name(rawValue: "ReachStatusChanged"), object: nil)
         reachabilityStatusChanged()
@@ -40,18 +42,40 @@ class ViewController: UIViewController {
     }
     
     func didLoadData(musicVideo: [MusicVideo]) {
-        
-        
-        //print(reachabilityStatus)
-        
+        videos = musicVideo
         for (index, item) in musicVideo.enumerated() {
             print("\(index) name = \(item.videoName)")
+            
         }
+        tableView.reloadData()
+        print("video count \(videos.count)")
     }
     
     deinit {
         NotificationCenter.default.removeObserver(self, name: Notification.Name(rawValue: "ReachStatusChanged"), object: nil)
     }
-
+    
+    
+    // MARK: - UITableView DataSource
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return videos.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "MusicVideoCell", for: indexPath)
+        
+        let video = videos[indexPath.row]
+        
+        cell.textLabel?.text = video.videoName
+        cell.detailTextLabel?.text = video.videoPrice
+        
+        return cell
+    }
+    
+    
+    
+    // MARK: - UITableView Delegate
+    
 }
 
