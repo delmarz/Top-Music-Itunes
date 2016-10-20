@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CD0474B41DB3300F0069A1D9 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = CD0474B31DB3300F0069A1D9 /* Reachability.m */; };
+		CD1DF7991DB8D80600EDEDDF /* MusicVideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1DF7981DB8D80600EDEDDF /* MusicVideoTableViewCell.swift */; };
 		CD5F42201DB19E3F00240A54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5F421F1DB19E3F00240A54 /* AppDelegate.swift */; };
 		CD5F42251DB19E3F00240A54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD5F42231DB19E3F00240A54 /* Main.storyboard */; };
 		CD5F42271DB19E3F00240A54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD5F42261DB19E3F00240A54 /* Assets.xcassets */; };
@@ -41,6 +42,7 @@
 		CD0474B11DB3300F0069A1D9 /* Top Music Itunes-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Top Music Itunes-Bridging-Header.h"; sourceTree = "<group>"; };
 		CD0474B21DB3300F0069A1D9 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		CD0474B31DB3300F0069A1D9 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		CD1DF7981DB8D80600EDEDDF /* MusicVideoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicVideoTableViewCell.swift; sourceTree = "<group>"; };
 		CD5F421C1DB19E3F00240A54 /* Top Music Itunes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Top Music Itunes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD5F421F1DB19E3F00240A54 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CD5F42241DB19E3F00240A54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 			children = (
 				CD5F42511DB1A9F700240A54 /* APIManager.swift */,
 				CD5F42561DB227F300240A54 /* MusicVideo.swift */,
+				CD1DF7981DB8D80600EDEDDF /* MusicVideoTableViewCell.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -331,6 +334,7 @@
 				CDC28C941DB7B16D009A4252 /* MusicVideoTableViewController.swift in Sources */,
 				CD5F42201DB19E3F00240A54 /* AppDelegate.swift in Sources */,
 				CD0474B41DB3300F0069A1D9 /* Reachability.m in Sources */,
+				CD1DF7991DB8D80600EDEDDF /* MusicVideoTableViewCell.swift in Sources */,
 				CD5F42551DB2267900240A54 /* Constant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

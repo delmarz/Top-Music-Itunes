@@ -9,35 +9,39 @@
 import UIKit
 
 class MusicVideoTableViewController: UITableViewController {
-
-
+    
+    
     var videos = [MusicVideo]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        tableView.estimatedRowHeight = 130
+        tableView.rowHeight = UITableViewAutomaticDimension
         
         NotificationCenter.default.addObserver(self, selector: #selector(MusicVideoTableViewController.reachabilityStatusChanged), name: Notification.Name(rawValue: "ReachStatusChanged"), object: nil)
         reachabilityStatusChanged()
         
-        let api = APIManager()
-        api.loadData("https://itunes.apple.com/us/rss/topmusicvideos/limit=10/json", completion: didLoadData)
     }
     
     func reachabilityStatusChanged() {
         switch reachabilityStatus {
         case NOACCESS:
-            view.backgroundColor = UIColor.red
-           // displayLabel.text = "No Internet Access"
-        case WIFI:
-            view.backgroundColor = UIColor.green
-            //displayLabel.text = "You are on Wifi Acess!"
-        case WWAN:
-            view.backgroundColor = UIColor.yellow
-            //displayLabel.text = "You are on Cellular Access!"
+            alertView(title: "\(NOACCESS)")
         default:
-            return
+            if videos.count > 0 {
+                print("dont need to refresh")
+            } else {
+                
+                callAPI()
+            }
+            
         }
+    }
+    
+    func callAPI() {
+        let api = APIManager()
+        api.loadData("https://itunes.apple.com/us/rss/topmusicvideos/limit=50/json", completion: didLoadData)
     }
     
     func didLoadData(musicVideo: [MusicVideo]) {
@@ -55,23 +59,38 @@ class MusicVideoTableViewController: UITableViewController {
     }
     
     
+    // MARK: - Helper
+    
+    func alertView(title: String) {
+        let alertController = UIAlertController(title: title, message: nil, preferredStyle: .alert)
+        let addOK = UIAlertAction(title: "OK", style: .default) { (action) in
+            // do something
+        }
+        alertController.addAction(addOK)
+        
+        DispatchQueue.main.async {
+            self.present(alertController, animated: true, completion: nil)
+        }
+    }
+    
     // MARK: - UITableView DataSource
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return videos.count
     }
     
-   override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "MusicVideoCell", for: indexPath)
+    private struct MusicVideoIdentifier {
+        static let cellIdentifier = "MusicVideoCell"
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: MusicVideoIdentifier.cellIdentifier, for: indexPath) as! MusicVideoTableViewCell
         
-        let video = videos[indexPath.row]
-        
-        cell.textLabel?.text = video.videoName
-        cell.detailTextLabel?.text = video.videoPrice
+        cell.musicVideo = videos[indexPath.row]
         
         return cell
     }
     
     
-
+    
 }
