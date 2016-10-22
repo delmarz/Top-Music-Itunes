@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		CD0474B41DB3300F0069A1D9 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = CD0474B31DB3300F0069A1D9 /* Reachability.m */; };
 		CD1DF7991DB8D80600EDEDDF /* MusicVideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1DF7981DB8D80600EDEDDF /* MusicVideoTableViewCell.swift */; };
+		CD4E2B971DBBC271008D6764 /* MusicVideoSettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4E2B961DBBC271008D6764 /* MusicVideoSettingTableViewController.swift */; };
 		CD5F42201DB19E3F00240A54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5F421F1DB19E3F00240A54 /* AppDelegate.swift */; };
 		CD5F42251DB19E3F00240A54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD5F42231DB19E3F00240A54 /* Main.storyboard */; };
 		CD5F42271DB19E3F00240A54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD5F42261DB19E3F00240A54 /* Assets.xcassets */; };
@@ -44,6 +45,7 @@
 		CD0474B21DB3300F0069A1D9 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		CD0474B31DB3300F0069A1D9 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		CD1DF7981DB8D80600EDEDDF /* MusicVideoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicVideoTableViewCell.swift; sourceTree = "<group>"; };
+		CD4E2B961DBBC271008D6764 /* MusicVideoSettingTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicVideoSettingTableViewController.swift; sourceTree = "<group>"; };
 		CD5F421C1DB19E3F00240A54 /* Top Music Itunes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Top Music Itunes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD5F421F1DB19E3F00240A54 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CD5F42241DB19E3F00240A54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -164,6 +166,7 @@
 			children = (
 				CDC28C931DB7B16D009A4252 /* MusicVideoTableViewController.swift */,
 				CDFFAB9F1DBA59A7002D0C2B /* MusicVideDetailViewController.swift */,
+				CD4E2B961DBBC271008D6764 /* MusicVideoSettingTableViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 				TargetAttributes = {
 					CD5F421B1DB19E3E00240A54 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = W8T4AU8AM8;
 						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
@@ -333,6 +337,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD5F42521DB1A9F700240A54 /* APIManager.swift in Sources */,
+				CD4E2B971DBBC271008D6764 /* MusicVideoSettingTableViewController.swift in Sources */,
 				CDFFABA01DBA59A7002D0C2B /* MusicVideDetailViewController.swift in Sources */,
 				CD5F42571DB227F300240A54 /* MusicVideo.swift in Sources */,
 				CDC28C941DB7B16D009A4252 /* MusicVideoTableViewController.swift in Sources */,
@@ -492,7 +497,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = W8T4AU8AM8;
 				INFOPLIST_FILE = "Top Music Itunes/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.delmarz.Top-Music-Itunes";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -507,7 +514,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = W8T4AU8AM8;
 				INFOPLIST_FILE = "Top Music Itunes/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.delmarz.Top-Music-Itunes";
 				PRODUCT_NAME = "$(TARGET_NAME)";

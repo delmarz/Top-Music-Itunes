@@ -26,7 +26,7 @@ class MusicVideDetailViewController: UIViewController {
         
         title = videos.videoArtist
         videoNameLabel.text = videos.videoName
-        videoGenreLabel.text = videos.videoGenre
+        videoGenreLabel.text = "Genre: " + videos.videoGenre
         videoPrice.text = videos.videoPrice
         videoRights.text = videos.videoRights
         

@@ -49,7 +49,7 @@ class MusicVideoTableViewCell: UITableViewCell {
                     imageView.image = image
                 }
             } catch {
-                
+                print("Error fetch images")
             }
         }
     }
