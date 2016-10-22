@@ -19,6 +19,7 @@
 		CD5F42551DB2267900240A54 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5F42541DB2267900240A54 /* Constant.swift */; };
 		CD5F42571DB227F300240A54 /* MusicVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5F42561DB227F300240A54 /* MusicVideo.swift */; };
 		CDC28C941DB7B16D009A4252 /* MusicVideoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC28C931DB7B16D009A4252 /* MusicVideoTableViewController.swift */; };
+		CDFFABA01DBA59A7002D0C2B /* MusicVideDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFFAB9F1DBA59A7002D0C2B /* MusicVideDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		CD5F42541DB2267900240A54 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		CD5F42561DB227F300240A54 /* MusicVideo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicVideo.swift; sourceTree = "<group>"; };
 		CDC28C931DB7B16D009A4252 /* MusicVideoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicVideoTableViewController.swift; sourceTree = "<group>"; };
+		CDFFAB9F1DBA59A7002D0C2B /* MusicVideDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicVideDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				CDC28C931DB7B16D009A4252 /* MusicVideoTableViewController.swift */,
+				CDFFAB9F1DBA59A7002D0C2B /* MusicVideDetailViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -330,6 +333,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD5F42521DB1A9F700240A54 /* APIManager.swift in Sources */,
+				CDFFABA01DBA59A7002D0C2B /* MusicVideDetailViewController.swift in Sources */,
 				CD5F42571DB227F300240A54 /* MusicVideo.swift in Sources */,
 				CDC28C941DB7B16D009A4252 /* MusicVideoTableViewController.swift in Sources */,
 				CD5F42201DB19E3F00240A54 /* AppDelegate.swift in Sources */,

@@ -79,6 +79,10 @@ class MusicVideoTableViewController: UITableViewController {
         return videos.count
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "MusicVideoDetails", sender: self)
+    }
+    
     private struct MusicVideoIdentifier {
         static let cellIdentifier = "MusicVideoCell"
     }
@@ -91,6 +95,16 @@ class MusicVideoTableViewController: UITableViewController {
         return cell
     }
     
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "MusicVideoDetails" {
+            let controller = segue.destination as! MusicVideDetailViewController
+            if let indexPath = tableView.indexPathForSelectedRow {
+                let musicVideo = videos[indexPath.row]
+                controller.videos = musicVideo
+            }
+        }
+    }
     
     
 }
