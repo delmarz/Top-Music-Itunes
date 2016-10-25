@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import AVKit
+import AVFoundation
 
 class MusicVideDetailViewController: UIViewController {
     
@@ -36,15 +38,22 @@ class MusicVideDetailViewController: UIViewController {
             videoImageView.image = UIImage(named: "placeholder")
         }
     }
-
+    
     
     // MARK: - IBAction
     
     @IBAction func playBarButtonItemPressed(_ sender: AnyObject) {
+        let url = URL(string: videos.videoURL)!
+        let player = AVPlayer(url: url)
+        let playerViewController = AVPlayerViewController()
+        playerViewController.player = player
+        present(playerViewController, animated: true) {
+            playerViewController.player?.play()
+        }
     }
     
     @IBAction func shareBarButtonItemPressed(_ sender: AnyObject) {
     }
     
-
+    
 }

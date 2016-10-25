@@ -33,6 +33,9 @@ class MusicVideoSettingTableViewController: UITableViewController {
             let apiCount = userDefaults.object(forKey: "APICountSlider") as! Int
             apiCountSlider.value = Float(apiCount)
             apiCountLabel.text = "\(apiCount)"
+        } else {
+            apiCountSlider.value = 10.0
+            apiCountLabel.text = "\(Int(apiCountSlider.value))"
         }
         
         

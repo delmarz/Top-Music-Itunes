@@ -12,6 +12,7 @@ class MusicVideoTableViewController: UITableViewController {
     
     
     var videos = [MusicVideo]()
+    var limit = 10
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +23,15 @@ class MusicVideoTableViewController: UITableViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(MusicVideoTableViewController.reachabilityStatusChanged), name: Notification.Name(rawValue: "ReachStatusChanged"), object: nil)
         reachabilityStatusChanged()
         
+        
+        refreshControl?.addTarget(self, action: #selector(MusicVideoTableViewController.refreshAPICount), for: .valueChanged)
+        
+        
+    }
+    
+    func refreshAPICount() {
+        refreshControl?.beginRefreshing()
+        callAPI()
     }
     
     func reachabilityStatusChanged() {
@@ -39,9 +49,25 @@ class MusicVideoTableViewController: UITableViewController {
         }
     }
     
+    func getAPICount() {
+        if UserDefaults.standard.object(forKey: "APICountSlider") != nil {
+            let count = UserDefaults.standard.object(forKey: "APICountSlider") as! Int
+            limit = count
+            
+            let formatter = DateFormatter()
+            formatter.dateFormat = "E, dd MMM yyy HH:mm:ss"
+            let refreshTitle = formatter.string(from: Date())
+            
+            refreshControl?.attributedTitle = NSAttributedString(string: refreshTitle)
+            
+        }
+    }
+    
     func callAPI() {
+        getAPICount()
+        
         let api = APIManager()
-        api.loadData("https://itunes.apple.com/us/rss/topmusicvideos/limit=50/json", completion: didLoadData)
+        api.loadData("https://itunes.apple.com/us/rss/topmusicvideos/limit=\(limit)/json", completion: didLoadData)
     }
     
     func didLoadData(musicVideo: [MusicVideo]) {
@@ -51,6 +77,8 @@ class MusicVideoTableViewController: UITableViewController {
             
         }
         tableView.reloadData()
+        navigationItem.title = "Top \(limit) Music Videos in iTunes"
+        refreshControl?.endRefreshing()
         print("video count \(videos.count)")
     }
     
