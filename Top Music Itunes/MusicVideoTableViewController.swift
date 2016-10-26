@@ -8,11 +8,13 @@
 
 import UIKit
 
-class MusicVideoTableViewController: UITableViewController {
+class MusicVideoTableViewController: UITableViewController, UISearchResultsUpdating {
     
     
     var videos = [MusicVideo]()
+    var filteredVideos = [MusicVideo]()
     var limit = 10
+    var resultSearchController = UISearchController(searchResultsController: nil)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,7 +32,7 @@ class MusicVideoTableViewController: UITableViewController {
     }
     
     func refreshAPICount() {
-        refreshControl?.beginRefreshing()
+        refreshControl?.endRefreshing()
         callAPI()
     }
     
@@ -78,7 +80,13 @@ class MusicVideoTableViewController: UITableViewController {
         }
         tableView.reloadData()
         navigationItem.title = "Top \(limit) Music Videos in iTunes"
-        refreshControl?.endRefreshing()
+        
+        definesPresentationContext = true
+        resultSearchController.dimsBackgroundDuringPresentation = false
+        resultSearchController.searchBar.placeholder = "Search for Artist"
+        resultSearchController.searchBar.searchBarStyle = .prominent
+        resultSearchController.searchResultsUpdater = self
+        tableView.tableHeaderView = resultSearchController.searchBar
         print("video count \(videos.count)")
     }
     
@@ -101,9 +109,14 @@ class MusicVideoTableViewController: UITableViewController {
         }
     }
     
+    
+    
     // MARK: - UITableView DataSource
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if resultSearchController.isActive {
+            return filteredVideos.count
+        }
         return videos.count
     }
     
@@ -118,17 +131,46 @@ class MusicVideoTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: MusicVideoIdentifier.cellIdentifier, for: indexPath) as! MusicVideoTableViewCell
         
-        cell.musicVideo = videos[indexPath.row]
-        
+        if resultSearchController.isActive {
+            cell.musicVideo = filteredVideos[indexPath.row]
+        } else {
+            cell.musicVideo = videos[indexPath.row]
+        }
         return cell
     }
     
+    
+    
+    // MARK: - UISearchResultsUpdating
+    
+    func updateSearchResults(for searchController: UISearchController) {
+        let searchText = searchController.searchBar.text!.lowercased()
+        filterSearch(searchText: searchText)
+    }
+    
+    func filterSearch(searchText: String) {
+        filteredVideos = videos.filter({videos in
+            return videos.videoName.lowercased().contains(searchText.lowercased()) ||
+                   "\(videos.rank)".lowercased().contains(searchText.lowercased()) ||
+                   videos.videoArtist.lowercased().contains(searchText.lowercased())
+        })
+        tableView.reloadData()
+    }
+    
+    // MARK: - Segue
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "MusicVideoDetails" {
             let controller = segue.destination as! MusicVideDetailViewController
             if let indexPath = tableView.indexPathForSelectedRow {
-                let musicVideo = videos[indexPath.row]
+                
+                let musicVideo: MusicVideo
+                
+                if resultSearchController.isActive {
+                    musicVideo = filteredVideos[indexPath.row]
+                } else {
+                    musicVideo = videos[indexPath.row]
+                }
                 controller.videos = musicVideo
             }
         }

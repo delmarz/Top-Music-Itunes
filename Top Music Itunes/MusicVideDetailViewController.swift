@@ -53,6 +53,21 @@ class MusicVideDetailViewController: UIViewController {
     }
     
     @IBAction func shareBarButtonItemPressed(_ sender: AnyObject) {
+        let activity1 = "test 1"
+        let activity2 = "test 3"
+        let activity3 = "\(videos.videoName) \(videos.videoPrice)"
+        let activityViewController = UIActivityViewController(activityItems: [activity1, activity2, activity3], applicationActivities: nil)
+        
+        activityViewController.completionWithItemsHandler = {
+            (activity, success, item, error) in
+            if activity == .mail {
+                print("mail selected")
+            }
+        }
+        
+        present(activityViewController, animated: true, completion: nil)
+        
+        
     }
     
     

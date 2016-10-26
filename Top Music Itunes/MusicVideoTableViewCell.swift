@@ -32,8 +32,6 @@ class MusicVideoTableViewCell: UITableViewCell {
             print("get images in background thread")
             getMusicVideoImage(musicVideo: musicVideo!, imageView: videoImageView)
         }
-
-        
     }
  
     func getMusicVideoImage(musicVideo: MusicVideo, imageView: UIImageView) {
